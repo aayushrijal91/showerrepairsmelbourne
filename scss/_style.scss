@@ -177,11 +177,16 @@ section.accreditiation {
     background: $light;
 }
 
-footer {
-    font-size: 0.875rem;
-    background-color: #221f1f;
+.colorful-bar {
+    height: 10px;
+    background: linear-gradient(90deg, $secondary 0 33.33%, $tertiary 33.33% 66.66%, $quarternary 66.66% 100%);
+}
 
-    @include media-breakpoint-down(sm) {
-        font-size: 0.61rem;
+footer {
+    background-color: $primary;
+    padding: 77px 0 33px;
+
+    .contact {
+        padding: 120px 0;
     }
 }

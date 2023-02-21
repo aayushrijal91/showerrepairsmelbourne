@@ -2,12 +2,17 @@
 include __DIR__ . '/env.php';
 
 $site = "Shower Base & Leak Repairs Melbourne";
-$phone_number = "0432 406 340";
+$phone_number = "(03) 9134 8951";
 $admin_email = 'arijal@aiims.com.au';
 $bcc_email = "";
 $no_reply_email = 'info@website.com.au';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;
+
+$facebook = "#";
+$instagram = "#";
+$linkedin = "#";
+$youtube = "#";
 
 function renderImg($filename, $folder, $classname = "")
 {
