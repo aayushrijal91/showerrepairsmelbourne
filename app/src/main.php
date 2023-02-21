@@ -224,7 +224,7 @@
     </div>
 </section>
 
-<section class="services">
+<section class="services" id="services">
     <div class="bg-light text-primary pb-7">
         <div class="container">
             <div class="row justify-content-between align-items-center">
@@ -347,7 +347,47 @@
     </div>
 </section>
 
-<section class="form"></section>
+<section class="form">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="fs-57 fw-600">Get your free quote today</div>
+                <div class="fs-17 fw-300 pt-4">Simply fill out your information below and we will get back to you shortly</div>
+                <form action="./src/form" method="POST">
+                    <div class="row gy-4">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control light" name="name" placeholder="Name*" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control light" name="phone" placeholder="Contact no.*" required>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control light" name="address" placeholder="Street adress*" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control light" name="postcode" placeholder="Postcode*" required>
+                        </div>
+                        <div class="col-md-5">
+                            <select name="" class="form-control form-select dark">
+                                <option selected disabled>Select service*</option>
+                                <option></option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input type="date" class="form-control dark" name="date" required>
+                        </div>
+                        <div class="col">
+                            <input type="time" class="form-control dark" name="time" required>
+                        </div>
+                        <div class="col-12">
+                            <textarea name="enquiry" class="form-control light" placeholder="Additional message (optional)" rows="5"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="accreditiation">
     <div class="container">

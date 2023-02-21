@@ -170,6 +170,38 @@ section.quick-contact {
 section.form {
     padding: 100px 0 141px;
     background: $secondary;
+    color: $white;
+
+    form {
+        input, select {
+            height: 55px;
+        }
+
+        .form-control {
+            border: 1px solid $light;
+            border-radius: 5px;
+            font-size: 17px;
+            font-weight: 300;
+            
+            &.light {
+                background: rgba(243, 247, 251, 0.35);
+                color: $dark;
+
+                &::placeholder {
+                    color: $dark;
+                }
+            }
+
+            &.dark {
+                background: rgba(0, 80, 165, 0.38);
+                color: $white;
+                
+                &::placeholder {
+                    color: $white;
+                }
+            }
+        }
+    }
 }
 
 section.accreditiation {
