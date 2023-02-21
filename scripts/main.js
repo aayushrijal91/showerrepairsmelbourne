@@ -104,3 +104,13 @@ $('.service-card .description').each(function() {
         $(this).parents('.service-card').find('.description').html(fullDescription);
     })
 });
+
+function fileUploaded(uploadName, labelId, textColor = '#161616') {
+    var file = document.getElementById(uploadName);
+    if (file.value != "") {
+        var theSplit = file.value.split('\\');
+        var fileName = theSplit[theSplit.length - 1];
+        $(`#${labelId}`).html(fileName.substring(0, 50));
+        $(`#${labelId}`).css('color', textColor);
+    }
+}

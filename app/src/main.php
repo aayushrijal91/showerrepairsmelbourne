@@ -350,9 +350,9 @@
 <section class="form">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
+            <div class="col-lg-8 col-xl-7 text-center">
                 <div class="fs-57 fw-600">Get your free quote today</div>
-                <div class="fs-17 fw-300 pt-4">Simply fill out your information below and we will get back to you shortly</div>
+                <div class="fs-17 fw-300 pt-4 pb-6">Simply fill out your information below and we will get back to you shortly</div>
                 <form action="./src/form" method="POST">
                     <div class="row gy-4">
                         <div class="col-md-6">
@@ -368,7 +368,7 @@
                             <input type="text" class="form-control light" name="postcode" placeholder="Postcode*" required>
                         </div>
                         <div class="col-md-5">
-                            <select name="" class="form-control form-select dark">
+                            <select name="service" class="form-control form-select dark">
                                 <option selected disabled>Select service*</option>
                                 <option></option>
                             </select>
@@ -381,6 +381,24 @@
                         </div>
                         <div class="col-12">
                             <textarea name="enquiry" class="form-control light" placeholder="Additional message (optional)" rows="5"></textarea>
+                        </div>
+                        <div class="col-12 py-3">
+                            <label for="file-upload" class="my-0 w-100 text-white fs-17 fw-600" id="file-label">
+                                <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.26831 7.81843L14.0865 1.00024L20.9047 7.81843" stroke="#F3F7FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.0859 1.00024V19.1821" stroke="#F3F7FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M8.40436 14.6364H4.67871C4.20203 14.6364 3.79162 14.9728 3.69813 15.4402L1.8254 24.8039C1.70165 25.4227 2.17494 26 2.80599 26H25.3664C25.9974 26 26.4707 25.4227 26.347 24.8039L24.4742 15.4402C24.3807 14.9728 23.9703 14.6364 23.4937 14.6364H19.768" stroke="#F3F7FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <br>
+                                <div class="pt-2">Attach supporting files</div>
+                            </label>
+                            <input id="file-upload" class="form-control rounded-0" type="file" name="uploadedFile" onchange="fileUploaded('file-upload','uploaded-file-name')">
+                            <div class="text-light fw-300 text-center" id="uploaded-file-name">
+                                (optional)
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn w-100 btn-light rounded-pill border-quarternary shadow-quarternary text-quarternary fs-23 px-5">Submit now</button>
                         </div>
                     </div>
                 </form>

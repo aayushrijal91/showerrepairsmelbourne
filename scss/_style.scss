@@ -177,6 +177,10 @@ section.form {
             height: 55px;
         }
 
+        input[type="file"] {
+            display: none;
+        }
+
         .form-control {
             border: 1px solid $light;
             border-radius: 5px;
