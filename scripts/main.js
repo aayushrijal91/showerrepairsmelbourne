@@ -88,3 +88,19 @@ if($("#banner-slider").length) {
         });
     });
 }
+
+$('.why-us-card').on('mouseenter', function() {
+    $('.why-us-card').removeClass('active');
+    $(this).addClass('active');
+});
+
+$('.service-card .description').each(function() {
+    let fullDescription = $(this).text();
+    let truncatedDescription = fullDescription.length > 40 ? fullDescription.substring(0,40) + "..." : fullDescription;
+
+    $(this).html(truncatedDescription);
+
+    $(this).parents('.service-card').find('.showMoreServiceDescription').on('click',function() {
+        $(this).parents('.service-card').find('.description').html(fullDescription);
+    })
+});
