@@ -187,36 +187,95 @@ section.why-us {
         padding: 112px 0 96px;
     }
 
-    .why-us-card {
-        border-radius: 10px;
-        padding: 25px 30px 47px;
-        opacity: 0.35;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        transition: 0.2s all;
-
-        .heading {
-            color: $light;
-            line-height: 1.2;
-            font-size: 35px;
-            font-weight: 600;
-            text-shadow: -1px -1px 0 $primary,
-                1px -1px 0 $primary,
-                -1px 1px 0 $primary,
-                1px 1px 0 $primary,
-                3px 3px 0 $primary;
+    .why-us-sm {
+        padding-top: 96px;
+        
+        @include media-breakpoint-up(md) {
+            display: none;
         }
 
-        &.active {
-            opacity: 1;
+        .why-us-card {
+            min-height: 291px;
+            color: $primary;
+            padding: 23px 21px 11px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow-x: hidden;
+            
+            .heading {
+                color: $light;
+                line-height: 1.2;
+                font-size: 25px;
+                font-weight: 600;
+                text-shadow: -1px -1px 0 $primary,
+                    1px -1px 0 $primary,
+                    -1px 1px 0 $primary,
+                    1px 1px 0 $primary,
+                    2px 2px 0 $primary;
+            }
+
+            ul.whyUsDots {
+                display: inline-flex;
+                list-style-type: none;
+                padding-inline-start: 0;
+                gap: 12px;
+
+                li {
+                    height: 4.5px;
+                    width: 4.5px;
+                    border-radius: 50%;
+                    background: $light;
+
+                    &.active {
+                        background: $primary;
+                    }
+                }
+            }
+
+            .whyUsGoTo {
+                position: relative;
+                z-index: 100;
+            }
+        }
+    }
+
+    .why-us-large {
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+
+        .why-us-card {
+            border-radius: 10px;
+            padding: 25px 30px 47px;
+            opacity: 0.35;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             transition: 0.2s all;
-        }
-
-        .divider {
-            height: 0.7px;
-            width: 100%;
+    
+            .heading {
+                color: $light;
+                line-height: 1.2;
+                font-size: 35px;
+                font-weight: 600;
+                text-shadow: -1px -1px 0 $primary,
+                    1px -1px 0 $primary,
+                    -1px 1px 0 $primary,
+                    1px 1px 0 $primary,
+                    3px 3px 0 $primary;
+            }
+    
+            &.active {
+                opacity: 1;
+                transition: 0.2s all;
+            }
+    
+            .divider {
+                height: 0.7px;
+                width: 100%;
+            }
         }
     }
 }

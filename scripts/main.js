@@ -24,7 +24,7 @@ $('#return-to-top').on('click', () => {
     }, 500);
 });
 
-if($("#banner-slider").length) {
+if ($("#banner-slider").length) {
     $("#banner-slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -37,7 +37,7 @@ if($("#banner-slider").length) {
     let time = .1;
     let progressBarIndex = 0;
 
-    $('.progressBarContainer .progressBar').each(function(index) {
+    $('.progressBarContainer .progressBar').each(function (index) {
         var progress = "<div class='inProgress inProgress" + index + "'></div>";
         $(this).html(progress);
 
@@ -48,7 +48,7 @@ if($("#banner-slider").length) {
         }
 
         function interval() {
-            if(($('#banner-slider .slick-track div[data-slick-index="' + progressBarIndex + '"]').attr("aria-hidden")) === "true") {
+            if (($('#banner-slider .slick-track div[data-slick-index="' + progressBarIndex + '"]').attr("aria-hidden")) === "true") {
                 progressBarIndex = $('#banner-slider .slick-track div[aria-hidden="false"]').data("slickIndex");
                 startProgressbar();
             } else {
@@ -57,11 +57,11 @@ if($("#banner-slider").length) {
                     width: percentTime + "%"
                 });
 
-                if(percentTime >= 100) {
+                if (percentTime >= 100) {
                     $('#banner-slider').slick('slickNext');
                     progressBarIndex++;
 
-                    if(progressBarIndex > 1) {
+                    if (progressBarIndex > 1) {
                         progressBarIndex = 0;
                     }
 
@@ -89,18 +89,18 @@ if($("#banner-slider").length) {
     });
 }
 
-$('.why-us-card').on('mouseenter', function() {
-    $('.why-us-card').removeClass('active');
+$('.why-us-large .why-us-card').on('mouseenter', function () {
+    $('.why-us-large .why-us-card').removeClass('active');
     $(this).addClass('active');
 });
 
-$('.service-card .description').each(function() {
+$('.service-card .description').each(function () {
     let fullDescription = $(this).text();
-    let truncatedDescription = fullDescription.length > 40 ? fullDescription.substring(0,40) + "..." : fullDescription;
+    let truncatedDescription = fullDescription.length > 40 ? fullDescription.substring(0, 40) + "..." : fullDescription;
 
     $(this).html(truncatedDescription);
 
-    $(this).parents('.service-card').find('.showMoreServiceDescription').on('click',function() {
+    $(this).parents('.service-card').find('.showMoreServiceDescription').on('click', function () {
         $(this).parents('.service-card').find('.description').html(fullDescription);
     })
 });
@@ -123,4 +123,63 @@ $("#review-sliders").slick({
     centerPadding: "50px",
     arrows: false,
     variableWidth: true,
-})
+});
+
+$('.whyUsCardInnerSlider').each(function () {
+    const newThis = this;
+
+    let whyUsCardSlider = $(newThis).slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        adaptiveHeight: true,
+    });
+
+    $(newThis).parents('.why-us-card').find('a.whyUsGoTo').on('click', function () {
+        let goTo = parseInt($(this).attr('dtarget'));
+
+        whyUsCardSlider.slick('slickGoTo', goTo);
+        manageFooter(newThis);
+    });
+
+    manageFooter(newThis);
+});
+
+function manageFooter(pointerThis) {
+    if ($(pointerThis).slick('slickCurrentSlide', true) == 0) {
+        $(pointerThis).parents('.why-us-card').find('.whyUsGoBack').css('visibility', 'hidden');
+        $(pointerThis).parents('.why-us-card').find('ul.whyUsDots li').removeClass('active');
+        $(pointerThis).parents('.why-us-card').find('ul.whyUsDots li:first').addClass('active');
+    }
+    else {
+        $(pointerThis).parents('.why-us-card').find('.whyUsGoBack').css('visibility', 'visible');
+        $(pointerThis).parents('.why-us-card').find('ul.whyUsDots li').removeClass('active');
+        $(pointerThis).parents('.why-us-card').find('ul.whyUsDots li:last').addClass('active');
+    }
+}
+
+// let whyUsCardSlider = $('.whyUsCardInnerSlider').slick({
+// });
+
+// function currentWhyUsSlider() {
+//     if(whyUsCardSlider.slick('slickCurrentSlide', true) == 0) {
+//         $('.whyUsGoBack').css('visibility', 'hidden');
+//         $('ul.whyUsDots li').removeClass('active');
+//         $('ul.whyUsDots li:first').addClass('active');
+//     } else {
+//         $('.whyUsGoBack').css('visibility', 'visible');
+//         $('ul.whyUsDots li').removeClass('active');
+//         $('ul.whyUsDots li:last').addClass('active');
+//     }
+// }
+
+// currentWhyUsSlider();
+
+// $('.whyUsGoTo').on('click', function() {
+//     let goTo = parseInt($(this).attr('dtarget'));
+
+//     whyUsCardSlider.slick('slickGoTo', goTo);
+//     currentWhyUsSlider();
+// });
+
+

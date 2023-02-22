@@ -208,7 +208,8 @@
                 </div>
             </div>
         </div>
-        <div class="row pt-7 gx-3 gy-4">
+
+        <div class="row pt-7 gx-3 gy-4 why-us-large">
             <div class="col-md-4">
                 <div class="why-us-card bg-tertiary active">
                     <div>
@@ -247,6 +248,147 @@
                         </div>
                     </div>
                     <div class="divider bg-white"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="why-us-sm">
+        <div class="why-us-card bg-tertiary">
+            <div class="whyUsCardInnerSlider">
+                <div class="pre">
+                    <div class="fs-13">Why should you choose Shower Repairs Melbourne?</div>
+                    <div class="row pt-5">
+                        <div class="col">
+                            <div class="heading">We consult & give practical advice</div>
+                            <div class="fw-600 pt-2">We're the best in the industry</div>
+                        </div>
+                        <div class="col-auto">
+                            <a href="javascript:void(0);" class="whyUsGoTo" dtarget="1">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24.9999" cy="25.0001" r="24.4999" transform="rotate(-90 24.9999 25.0001)" stroke="#0050A5" />
+                                    <path d="M20.6897 16.8306L27.8142 23.9551L20.6897 31.0797L22.3687 32.7587L30.3327 24.7946C30.5554 24.572 30.6804 24.27 30.6804 23.9551C30.6804 23.6403 30.5554 23.3383 30.3327 23.1156L22.3687 15.1516L20.6897 16.8306Z" fill="#0050A5" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="fw-600 fs-13">We consult &amp; give practical advice</div>
+                    <div class="text-dark py-4">
+                        At Shower Repairs Melbourne, we have been providing shower repair services to the <span class="fw-600">Melbourne community since 2010</span>, with over <span class="fw-600">3600 successful bathroom renovations to date</span>. Our success is driven by our superior designs and unparalleled workmanship. Choose us for your next shower repair project and experience the best in the industry. Shower repairs are a highly personal project, and it requires a <span class="fw-600">company with both creativity and experience</span> to ensure a seamless repair that meets the latest styles and trends.
+                    </div>
+                </div>
+            </div>
+            <div>
+                <hr class="bg-primary mt-0 mb-2">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <ul class="whyUsDots">
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="col-auto">
+                        <a href="javascript:void(0);" class="whyUsGoTo whyUsGoBack" dtarget="0">
+                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="14.5" cy="14.5" r="14.15" transform="rotate(90 14.5 14.5)" stroke="#0050A5" stroke-width="0.7" />
+                                <path d="M17 19.2383L12.8678 15.1061L17 10.9738L16.0262 10L11.407 14.6191C11.2779 14.7483 11.2054 14.9234 11.2054 15.1061C11.2054 15.2887 11.2779 15.4638 11.407 15.593L16.0262 20.2121L17 19.2383Z" fill="#0050A5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="why-us-card bg-tertiary-dark">
+            <div class="whyUsCardInnerSlider">
+                <div class="pre">
+                    <div class="fs-13">Why should you choose Shower Repairs Melbourne?</div>
+                    <div class="row pt-5">
+                        <div class="col">
+                            <div class="heading">Offering the best water proofing service in Melbourne</div>
+                            <div class="fw-600 pt-2">We have Lifetime Warranty</div>
+                        </div>
+                        <div class="col-auto">
+                            <a href="javascript:void(0);" class="whyUsGoTo" dtarget="1">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24.9999" cy="25.0001" r="24.4999" transform="rotate(-90 24.9999 25.0001)" stroke="#0050A5" />
+                                    <path d="M20.6897 16.8306L27.8142 23.9551L20.6897 31.0797L22.3687 32.7587L30.3327 24.7946C30.5554 24.572 30.6804 24.27 30.6804 23.9551C30.6804 23.6403 30.5554 23.3383 30.3327 23.1156L22.3687 15.1516L20.6897 16.8306Z" fill="#0050A5" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="fw-600 fs-13">Offering the best water proofing services in Melbourne</div>
+                    <div class="text-dark py-4">
+                        We offer renovation and expansion services for all waterproofing and sealing projects. <span class="fw-600">Our experts will guide you through the process</span> and help you visualise your dream outcome. Our <span class="fw-600">valuable advice and support</span> is the key to successful waterproofing and sealing projects in Melbourne. So, if you're looking for the <span class="fw-600">best shower sealing company</span> in the city, let us show you our expertise.
+                    </div>
+                </div>
+            </div>
+            <div>
+                <hr class="bg-primary mt-0 mb-2">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <ul class="whyUsDots">
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="col-auto">
+                        <a href="javascript:void(0);" class="whyUsGoTo whyUsGoBack" dtarget="0">
+                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="14.5" cy="14.5" r="14.15" transform="rotate(90 14.5 14.5)" stroke="#0050A5" stroke-width="0.7" />
+                                <path d="M17 19.2383L12.8678 15.1061L17 10.9738L16.0262 10L11.407 14.6191C11.2779 14.7483 11.2054 14.9234 11.2054 15.1061C11.2054 15.2887 11.2779 15.4638 11.407 15.593L16.0262 20.2121L17 19.2383Z" fill="#0050A5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="why-us-card bg-secondary">
+            <div class="whyUsCardInnerSlider">
+                <div class="pre">
+                    <div class="fs-13 text-white">Why should you choose Shower Repairs Melbourne?</div>
+                    <div class="row pt-5">
+                        <div class="col">
+                            <div class="heading">We DO NOT use contractors!</div>
+                            <div class="fw-600 pt-2">We are a licensed Sealing Company</div>
+                        </div>
+                        <div class="col-auto">
+                            <a href="javascript:void(0);" class="whyUsGoTo" dtarget="1">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24.9999" cy="25.0001" r="24.4999" transform="rotate(-90 24.9999 25.0001)" stroke="#0050A5" />
+                                    <path d="M20.6897 16.8306L27.8142 23.9551L20.6897 31.0797L22.3687 32.7587L30.3327 24.7946C30.5554 24.572 30.6804 24.27 30.6804 23.9551C30.6804 23.6403 30.5554 23.3383 30.3327 23.1156L22.3687 15.1516L20.6897 16.8306Z" fill="#0050A5" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="fw-600 fs-13 text-white">We DO NOT use contractors!</div>
+                    <div class="text-white py-4 fw-300">
+                        Shower Repairs Melbourne - <span class="fw-600">Quality Workmanship You Can Count On!</span>
+                        At Shower Repairs Melbourne, we understand the importance of quality workmanship in shower sealing and waterproofing. Unlike some contractors who offer quick and cheap services, we are fully licensed and committed to providing you with a sealing and waterproofing solution <span class="fw-600">that lasts a lifetime.</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <hr class="bg-primary mt-0 mb-2">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <ul class="whyUsDots">
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="col-auto">
+                        <a href="javascript:void(0);" class="whyUsGoTo whyUsGoBack" dtarget="0">
+                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="14.5" cy="14.5" r="14.15" transform="rotate(90 14.5 14.5)" stroke="#0050A5" stroke-width="0.7" />
+                                <path d="M17 19.2383L12.8678 15.1061L17 10.9738L16.0262 10L11.407 14.6191C11.2779 14.7483 11.2054 14.9234 11.2054 15.1061C11.2054 15.2887 11.2779 15.4638 11.407 15.593L16.0262 20.2121L17 19.2383Z" fill="#0050A5" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

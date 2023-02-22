@@ -1,6 +1,7 @@
 $primary: #0050A5;
 $secondary: #3FA9F3;
 $tertiary: #F3D502;
+$tertiary-dark: #FDBE01;
 $quarternary: #FB1F23;
 $light-blue: #E0EBF7;
 $black: #000000;
@@ -15,6 +16,7 @@ $theme-colors: (
 $theme-colors: map-merge(("primary": $primary,
             "secondary": $secondary,
             "tertiary": $tertiary,
+            "tertiary-dark": $tertiary-dark,
             "quarternary": $quarternary,
             "light-blue": $light-blue,
             "black": $black,
