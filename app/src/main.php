@@ -399,12 +399,12 @@
     <div class="bg-light text-primary pb-7">
         <div class="container">
             <div class="row justify-content-between align-items-center">
-                <div class="col-auto fs-57 fw-600">What services we offer</div>
-                <div class="col-auto fs-17 fw-300">Explore what we do</div>
+                <div class="col-auto fs-57 fw-600 lh-1">What services<br class="d-md-none"> we offer</div>
+                <div class="col-auto fs-17 fw-300 d-none d-md-block">Explore what we do</div>
             </div>
         </div>
     </div>
-    <div class="bg-light-blue py-9">
+    <div class="bg-light-blue py-6 py-md-9">
         <?php
         $services = [
             [
@@ -413,14 +413,48 @@
                 "description" => "We'll be at your door within the hour."
             ],
             [
-                "name" => "Gutter Cleaning",
+                "name" => "Shower Sealing",
                 "icon" => "gutter-cleaning.png",
                 "description" => "We provide a free quote for all gutter and downpipe jobs, ensuring that you know the cost before any work begins. From a basic gutter clean to a full replacement, we offer expert services for all your gutter needs."
+            ],
+            [
+                "name" => "Shower Sealing",
+                "icon" => "gutter-cleaning.png",
+                "description" => "We'll be at your door within the hour."
+            ],
+            [
+                "name" => "Shower Sealing",
+                "icon" => "gutter-cleaning.png",
+                "description" => "We'll be at your door within the hour."
+            ],
+            [
+                "name" => "Shower Sealing",
+                "icon" => "gutter-cleaning.png",
+                "description" => "We'll be at your door within the hour."
+            ],
+            [
+                "name" => "Shower Sealing",
+                "icon" => "gutter-cleaning.png",
+                "description" => "We'll be at your door within the hour."
+            ],
+            [
+                "name" => "Shower Sealing",
+                "icon" => "gutter-cleaning.png",
+                "description" => "We'll be at your door within the hour."
             ],
         ];
         ?>
         <div class="container">
-            <div class="row g-4">
+            <div class="d-md-none text-primary fw-300">Explore what we do</div>
+            <div class="serviceSliderNav">
+                <?php foreach ($services as $index => $service) { ?>
+                    <div>
+                        <div class="icon"><?= renderImg('service-' . ($index + 1) . '.jpg', 'lib') ?></div>
+                        <div class="name"><?= $service['name'] ?></div>
+                    </div>
+                <?php } ?>
+            </div>
+            <div class="row g-4" id="serviceSlider">
                 <?php foreach ($services as $index => $service) { ?>
                     <div class="col-md-6 col-lg-4">
                         <div class="service-card">
@@ -437,8 +471,8 @@
                             <div>
                                 <div class="divider"></div>
                                 <div class="row justify-content-between align-items-center px-2 pt-3 text-light-blue">
-                                    <div class="col-4 fw-600 ls-0_195"><?= ($index + 1) . '/' . count($services) ?></div>
-                                    <div class="col-4 text-center">
+                                    <div class="col-auto col-md-4 fw-600 ls-0_195"><?= ($index + 1) . '/' . count($services) ?></div>
+                                    <div class="col-md-4 text-center d-none d-md-block">
                                         <a href="javascript:void(0)" class="showMoreServiceDescription">
                                             <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="26.0579" cy="26.0579" r="25.5579" stroke="#F3F7FB" />
@@ -446,7 +480,27 @@
                                             </svg>
                                         </a>
                                     </div>
-                                    <div class="col-4 fw-300 text-end">Our services</div>
+                                    <div class="col-auto col-md-4 fw-300 text-end">Our services</div>
+                                    <div class="col-auto">
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <a href="javascript:void(0)" id="servicePrev">
+                                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="14.5" cy="14.5" r="14.15" transform="rotate(90 14.5 14.5)" stroke="#E0EBF6" stroke-width="0.7" />
+                                                        <path d="M17 19.2383L12.8678 15.1061L17 10.9738L16.0262 10L11.407 14.6191C11.2779 14.7483 11.2054 14.9234 11.2054 15.1061C11.2054 15.2887 11.2779 15.4638 11.407 15.593L16.0262 20.2121L17 19.2383Z" fill="#E0EBF6" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="col-auto">
+                                                <a href="javascript:void(0)" id="serviceNext">
+                                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="14.5" cy="14.5" r="14.15" transform="rotate(-90 14.5 14.5)" stroke="#E0EBF6" stroke-width="0.7" />
+                                                        <path d="M12 9.7617L16.1322 13.8939L12 18.0262L12.9738 19L17.593 14.3809C17.7221 14.2517 17.7946 14.0766 17.7946 13.8939C17.7946 13.7113 17.7221 13.5362 17.593 13.407L12.9738 8.78787L12 9.7617Z" fill="#E0EBF6" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

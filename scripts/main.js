@@ -158,28 +158,22 @@ function manageFooter(pointerThis) {
     }
 }
 
-// let whyUsCardSlider = $('.whyUsCardInnerSlider').slick({
-// });
+if($(document).width() <= 540) {
+    $('.serviceSliderNav').slick({
+        slidesToShow: 4,
+        arrows: false,
+        slidesToScroll: 1,
+        asNavFor: $("#serviceSlider"),
+    });
 
-// function currentWhyUsSlider() {
-//     if(whyUsCardSlider.slick('slickCurrentSlide', true) == 0) {
-//         $('.whyUsGoBack').css('visibility', 'hidden');
-//         $('ul.whyUsDots li').removeClass('active');
-//         $('ul.whyUsDots li:first').addClass('active');
-//     } else {
-//         $('.whyUsGoBack').css('visibility', 'visible');
-//         $('ul.whyUsDots li').removeClass('active');
-//         $('ul.whyUsDots li:last').addClass('active');
-//     }
-// }
-
-// currentWhyUsSlider();
-
-// $('.whyUsGoTo').on('click', function() {
-//     let goTo = parseInt($(this).attr('dtarget'));
-
-//     whyUsCardSlider.slick('slickGoTo', goTo);
-//     currentWhyUsSlider();
-// });
+    $("#serviceSlider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: $("#servicePrev"),
+        nextArrow: $("#serviceNext"),
+        asNavFor: $('.serviceSliderNav')
+    });
+}
 
 
