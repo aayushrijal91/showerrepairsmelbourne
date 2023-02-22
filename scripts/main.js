@@ -179,8 +179,8 @@ if($(document).width() <= 900) {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        prevArrow: $("#servicePrev"),
-        nextArrow: $("#serviceNext"),
+        prevArrow: $(".servicePrev"),
+        nextArrow: $(".serviceNext"),
         asNavFor: $('.serviceSliderNav')
     });
 }

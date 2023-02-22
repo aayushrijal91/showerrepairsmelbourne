@@ -36,7 +36,7 @@
                                     <a href="#form" class="btn btn-light rounded-pill border-quarternary shadow-quarternary text-quarternary fs-23 px-5">Free quote</a>
                                 </div>
                                 <div class="col-auto">
-                                    <a href="#form" class="btn btn-tertiary rounded-pill border-primary shadow-primary text-primary fs-23 px-5">Contact us</a>
+                                    <a href="tel:<?= $phone_number ?>" class="btn btn-tertiary rounded-pill border-primary shadow-primary text-primary fs-23 px-5">Contact us</a>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +83,7 @@
                                     <a href="#form" class="btn btn-light rounded-pill border-quarternary shadow-quarternary text-quarternary fs-23 px-5">Free quote</a>
                                 </div>
                                 <div class="col-auto">
-                                    <a href="#form" class="btn btn-tertiary rounded-pill border-primary shadow-primary text-primary fs-23 px-5">Contact us</a>
+                                    <a href="tel:<?= $phone_number ?>" class="btn btn-tertiary rounded-pill border-primary shadow-primary text-primary fs-23 px-5">Contact us</a>
                                 </div>
                             </div>
                         </div>
@@ -208,7 +208,7 @@
                         <a href="#form" class="btn btn-light rounded-pill border-quarternary shadow-quarternary text-quarternary fs-23 px-md-5 w-100">Free quote</a>
                     </div>
                     <div class="col col-md-auto">
-                        <a href="#form" class="btn btn-quarternary rounded-pill border-primary shadow-primary text-white fs-23 px-md-5 w-100">Contact us</a>
+                        <a href="tel:<?= $phone_number ?>" class="btn btn-quarternary rounded-pill border-primary shadow-primary text-white fs-23 px-md-5 w-100">Contact us</a>
                     </div>
                 </div>
             </div>
@@ -229,7 +229,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="why-us-card bg-tertiary">
+                <div class="why-us-card bg-tertiary-dark">
                     <div>
                         <div class="fs-16 text-primary">Why should you choose Shower Repairs Melbourne?</div>
                         <div class="heading pt-5">Offering the best water proofing service in Melbourne</div>
@@ -420,27 +420,27 @@
             [
                 "name" => "Bath Sealing",
                 "icon" => "shower-sealing.png",
-                "description" => "We provide a free quote for all gutter and downpipe jobs, ensuring that you know the cost before any work begins. From a basic gutter clean to a full replacement, we offer expert services for all your gutter needs."
+                "description" => "No extra or hidden fees for extended time."
             ],
             [
                 "name" => "Grout Repair",
                 "icon" => "shower-sealing.png",
-                "description" => "We'll be at your door within the hour."
+                "description" => "Teams all over Sydney to assist you 24/7."
             ],
             [
                 "name" => "Water Proofing",
                 "icon" => "shower-sealing.png",
-                "description" => "We'll be at your door within the hour."
+                "description" => "Teams all over Sydney to assist you 24/7."
             ],
             [
                 "name" => "Leaking Balcony",
                 "icon" => "shower-sealing.png",
-                "description" => "We'll be at your door within the hour."
+                "description" => "We’ll be at your door within the hour."
             ],
             [
                 "name" => "Leaking Shower",
                 "icon" => "shower-sealing.png",
-                "description" => "We'll be at your door within the hour."
+                "description" => "No extra or hidden fees for extended time."
             ],
         ];
         ?>
@@ -484,7 +484,7 @@
                                     <div class="col-auto d-lg-none">
                                         <div class="row">
                                             <div class="col-auto">
-                                                <a href="javascript:void(0)" id="servicePrev">
+                                                <a href="javascript:void(0)" class="servicePrev">
                                                     <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <circle cx="14.5" cy="14.5" r="14.15" transform="rotate(90 14.5 14.5)" stroke="#E0EBF6" stroke-width="0.7" />
                                                         <path d="M17 19.2383L12.8678 15.1061L17 10.9738L16.0262 10L11.407 14.6191C11.2779 14.7483 11.2054 14.9234 11.2054 15.1061C11.2054 15.2887 11.2779 15.4638 11.407 15.593L16.0262 20.2121L17 19.2383Z" fill="#E0EBF6" />
@@ -492,7 +492,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-auto">
-                                                <a href="javascript:void(0)" id="serviceNext">
+                                                <a href="javascript:void(0)" class="serviceNext">
                                                     <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <circle cx="14.5" cy="14.5" r="14.15" transform="rotate(-90 14.5 14.5)" stroke="#E0EBF6" stroke-width="0.7" />
                                                         <path d="M12 9.7617L16.1322 13.8939L12 18.0262L12.9738 19L17.593 14.3809C17.7221 14.2517 17.7946 14.0766 17.7946 13.8939C17.7946 13.7113 17.7221 13.5362 17.593 13.407L12.9738 8.78787L12 9.7617Z" fill="#E0EBF6" />
@@ -531,7 +531,7 @@
                     </div>
                 </div>
                 <hr class="bg-secondary mt-3 mb-5 my-lg-7 d-none d-md-block">
-                <div class="row justify-content-md-center gx-3 gx-md-4">
+                <!-- <div class="row justify-content-md-center gx-3 gx-md-4">
                     <div class="col-auto">
                         <a href="<?= $facebook ?>" target="_blank" class="">
                             <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -566,7 +566,7 @@
                             </svg>
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -599,7 +599,12 @@
                         <div class="col-7 col-md-5">
                             <select name="service" class="form-control form-select dark">
                                 <option selected disabled>Select service*</option>
-                                <option></option>
+                                <option>Shower Sealing</option>
+                                <option>Bath Sealing</option>
+                                <option>Grout Repairs</option>
+                                <option>Leaking Showers</option>
+                                <option>Leaking Balcony</option>
+                                <option>Water Proofing</option>
                             </select>
                         </div>
                         <div class="col">
@@ -686,11 +691,12 @@
 
 <footer>
     <div class="container">
-        <div class="text-center">
+        <!-- <div class="text-center">
             <a href="./"><?= renderImg('footer-logo.png', 'logo') ?></a>
-        </div>
-        <div class="row align-items-center justify-content-between contact gy-7 gy-md-2">
-            <div class="col-auto">
+        </div> -->
+        <div class="row align-items-center justify-content-center justify-content-md-between contact gy-7 gy-md-2">
+            <div class="col-auto"><a href="./"><?= renderImg('footer-logo.png', 'logo') ?></a></div>
+            <div class="col-12 col-md-auto">
                 <div class="row gy-5">
                     <div class="col-auto">
                         <div class="text-secondary fw-600 pb-3 d-md-none">Speak to our professionals</div>
@@ -702,7 +708,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md col-lg-auto">
+            <!-- <div class="col-md col-lg-auto">
                 <div class="row justify-content-center gx-2 gx-lg-4">
                     <div class="col-auto col-md col-lg-auto">
                         <a href="<?= $facebook ?>" target="_blank" class="">
@@ -739,7 +745,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div class="row justify-content-between align-items-center">
