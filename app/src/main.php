@@ -578,7 +578,8 @@
             <div class="col-lg-8 col-xl-7 text-md-center">
                 <div class="fs-57 fw-600 lh-1">Get your free<br class="d-md-none"> quote today</div>
                 <div class="fs-17 fw-300 pt-4 pb-5 pb-md-6">Simply fill out your information below and we will get back to you shortly</div>
-                <form action="./src/form" method="POST">
+                <form action="./src/form" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
                     <div class="row gx-3 gy-3 gy-md-4">
                         <div class="col-md-6">
                             <input type="text" class="form-control light" name="name" placeholder="Name*" required>
