@@ -164,6 +164,7 @@ if($(document).width() <= 540) {
         arrows: false,
         slidesToScroll: 1,
         asNavFor: $("#serviceSlider"),
+        focusOnSelect: true,
     });
 
     $("#serviceSlider").slick({

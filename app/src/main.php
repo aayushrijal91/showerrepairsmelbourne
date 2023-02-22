@@ -413,33 +413,28 @@
                 "description" => "We'll be at your door within the hour."
             ],
             [
-                "name" => "Shower Sealing",
-                "icon" => "gutter-cleaning.png",
+                "name" => "Bath Sealing",
+                "icon" => "shower-sealing.png",
                 "description" => "We provide a free quote for all gutter and downpipe jobs, ensuring that you know the cost before any work begins. From a basic gutter clean to a full replacement, we offer expert services for all your gutter needs."
             ],
             [
-                "name" => "Shower Sealing",
-                "icon" => "gutter-cleaning.png",
+                "name" => "Grout Repair",
+                "icon" => "shower-sealing.png",
                 "description" => "We'll be at your door within the hour."
             ],
             [
-                "name" => "Shower Sealing",
-                "icon" => "gutter-cleaning.png",
+                "name" => "Water Proofing",
+                "icon" => "shower-sealing.png",
                 "description" => "We'll be at your door within the hour."
             ],
             [
-                "name" => "Shower Sealing",
-                "icon" => "gutter-cleaning.png",
+                "name" => "Leaking Balcony",
+                "icon" => "shower-sealing.png",
                 "description" => "We'll be at your door within the hour."
             ],
             [
-                "name" => "Shower Sealing",
-                "icon" => "gutter-cleaning.png",
-                "description" => "We'll be at your door within the hour."
-            ],
-            [
-                "name" => "Shower Sealing",
-                "icon" => "gutter-cleaning.png",
+                "name" => "Leaking Shower",
+                "icon" => "shower-sealing.png",
                 "description" => "We'll be at your door within the hour."
             ],
         ];
