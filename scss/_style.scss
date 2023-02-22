@@ -7,6 +7,18 @@ header {
 
     .header-nav {
         padding: 58px 0 31px;
+
+        .subtitle {
+            font-size: 35px;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 16px;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 46px 0 24px;
+        }
     }
 
     .banner {
@@ -24,11 +36,22 @@ header {
             border: 4px solid $primary;
             box-shadow: 10px 14px 0px $primary;
             border-radius: 15px;
-            background-size: cover;
+            background-size: cover !important;
             color: $light;
             line-height: 1.19;
-            padding: 135px 0;
+            padding: 80px 0;
             margin: 0 11px;
+            display: flex;
+            align-items: center;
+            height: 635px;
+
+            @include media-breakpoint-down(sm) {
+                height: 576px;
+                border: 0;
+                box-shadow: none;
+                margin: 0 4px;
+                border-radius: 8px;
+            }
 
             .heading {
                 color: $light;
@@ -40,14 +63,48 @@ header {
                     -1px 1px 0 $primary,
                     1px 1px 0 $primary,
                     3px 3px 0 $primary;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 35px;
+                    text-align: center;
+                }
+            }
+
+            .subheading {
+                font-size: 25px;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 1rem;
+                    text-align: center;
+                    font-weight: 300;
+                    padding-top: 75px !important;
+                }
+            }
+
+            .secondarySubheading {
+                font-size: 25px;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 1rem;
+                    text-align: center;
+                    font-weight: 300;
+                }
             }
 
             &.card-1 {
                 background: imgUrl('banner-slider-1.jpg');
+
+                @include media-breakpoint-down(sm) {
+                    background: imgUrl('banner-slider-1-sm.jpg') center;
+                }
             }
 
             &.card-2 {
                 background: imgUrl('banner-slider-2.jpg');
+
+                @include media-breakpoint-down(sm) {
+                    background: imgUrl('banner-slider-2-sm.jpg') center;
+                }
             }
         }
     }
@@ -59,8 +116,17 @@ header {
         display: flex;
         justify-content: center;
 
+        @include media-breakpoint-down(sm) {
+            width: 93%;
+            bottom: 25rem;
+        }
+
         .progressBarContainer {
             width: 30rem;
+
+            @include media-breakpoint-down(sm) {
+                width: 16rem;
+            }
 
             a {
                 span.progressBar {
@@ -79,23 +145,47 @@ header {
             }
         }
     }
+
+    #review-sliders {
+        .slick-track {
+            display: flex;
+        }
+
+        .slick-slide {
+            margin: 0 5px;
+            height: inherit;
+        }
+    }
 }
 
 section.awards {
     background: $light-blue;
     padding: 105px 0;
 
+    @include media-breakpoint-down(sm) {
+        padding: 68px 0 111px;
+    }
+
     .awards-container {
         background: $primary;
         color: $white;
         border-radius: 33px;
         padding: 38px 49px;
+
+        @include media-breakpoint-down(sm) {
+            border-radius: 8px;
+            padding: 13px;
+        }
     }
 }
 
 section.why-us {
     padding: 178px 0;
     background: $light;
+
+    @include media-breakpoint-down(sm) {
+        padding: 112px 0 96px;
+    }
 
     .why-us-card {
         border-radius: 10px;
@@ -165,6 +255,10 @@ section.services {
 section.quick-contact {
     background: $light;
     padding: 168px 0;
+
+    @include media-breakpoint-down(sm) {
+        padding: 88px 0 105px;
+    }
 }
 
 section.form {
@@ -172,8 +266,14 @@ section.form {
     background: $secondary;
     color: $white;
 
+    @include media-breakpoint-down(sm) {
+        padding: 75px 0 85px;
+    }
+
     form {
-        input, select {
+
+        input,
+        select {
             height: 55px;
         }
 
@@ -186,7 +286,7 @@ section.form {
             border-radius: 5px;
             font-size: 17px;
             font-weight: 300;
-            
+
             &.light {
                 background: rgba(243, 247, 251, 0.35);
                 color: $dark;
@@ -199,7 +299,7 @@ section.form {
             &.dark {
                 background: rgba(0, 80, 165, 0.38);
                 color: $white;
-                
+
                 &::placeholder {
                     color: $white;
                 }
@@ -211,6 +311,10 @@ section.form {
 section.accreditiation {
     padding: 145px 0;
     background: $light;
+
+    @include media-breakpoint-down(sm) {
+        padding: 88px 0;
+    }
 }
 
 .colorful-bar {

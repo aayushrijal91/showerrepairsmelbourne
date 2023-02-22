@@ -114,3 +114,13 @@ function fileUploaded(uploadName, labelId, textColor = '#161616') {
         $(`#${labelId}`).css('color', textColor);
     }
 }
+
+$("#review-sliders").slick({
+    slidesToScroll: 1,
+    autoplay: true,
+    slidesToShow: 1,
+    centerMode: true,
+    centerPadding: "50px",
+    arrows: false,
+    variableWidth: true,
+})

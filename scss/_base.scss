@@ -15,12 +15,11 @@ body {
     justify-content: center;
     align-items: center;
     line-height: 0.8;
-    font-weight: 700;
     border-width: 2px;
     border-style: solid;
 
     @include media-breakpoint-down(sm) {
-        font-size: 0.875rem;
+        height: 54px;
     }
 
     &:focus {
