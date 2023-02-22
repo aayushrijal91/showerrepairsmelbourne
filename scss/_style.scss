@@ -112,7 +112,7 @@ header {
     .progressBarContainerWrapper {
         position: absolute;
         bottom: 7rem;
-        width: 100%;
+        width: 96%;
         display: flex;
         justify-content: center;
 
@@ -171,6 +171,10 @@ section.awards {
         color: $white;
         border-radius: 33px;
         padding: 38px 49px;
+        
+        @include media-breakpoint-only(lg) {
+            padding: 24px;
+        }
 
         @include media-breakpoint-down(sm) {
             border-radius: 8px;

@@ -157,7 +157,7 @@
 <section class="awards">
     <div class="container">
         <div class="row gy-md-5 gy-lg-0">
-            <div class="col-lg-5">
+            <div class="col-lg-4 col-xl-5">
                 <div class="fw-600 fs-57 lh-1 text-primary">Professional, Affordable &amp; Considerate Technicians</div>
                 <div class="text-dark py-5 lh-2 d-md-none">We offer renovation and expansion services for all waterproofing and sealing projects. Our experts will guide you through the process and help you visualise your dream outcome. Our valuable advice and support is the key to successful waterproofing and sealing projects in Melbourne. So, if you're looking for the best shower sealing company in the city, let us show you our expertise.</div>
                 <div class="row align-items-center g-3 pt-7 d-none d-lg-flex">
@@ -451,7 +451,7 @@
             </div>
             <div class="row g-4" id="serviceSlider">
                 <?php foreach ($services as $index => $service) { ?>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-xl-4">
                         <div class="service-card">
                             <div>
                                 <div class="row align-items-center px-2">
@@ -476,7 +476,7 @@
                                         </a>
                                     </div>
                                     <div class="col-auto col-lg-4 fw-300 text-end">Our services</div>
-                                    <div class="col-auto">
+                                    <div class="col-auto d-lg-none">
                                         <div class="row">
                                             <div class="col-auto">
                                                 <a href="javascript:void(0)" id="servicePrev">
@@ -509,7 +509,7 @@
 <section class="quick-contact">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-10">
+            <div class="col-xl-10">
                 <div class="row justify-content-center justify-content-lg-between align-items-center">
                     <div class="col-9 col-lg-6">
                         <div class="text-primary fs-35 fw-600 lh-1 text-md-center text-lg-start">Give us a call or enquire if you need our expert advice!</div>
@@ -633,7 +633,7 @@
 <section class="accreditiation">
     <div class="container">
         <div class="row justify-content-between align-items-center gy-5">
-            <div class="col-auto text-primary">
+            <div class="col-lg col-xl-auto text-primary">
                 <div class="fs-35 fw-600">Protect your home from water damage</div>
                 <div class="fs-20 fw-300 pt-3 pt-md-2">- Yes! We are the right team for your water proofing and sealing job!</div>
             </div>
@@ -650,7 +650,7 @@
         </div>
         <hr class="bg-secondary my-5 my-md-6">
         <div class="row justify-content-center">
-            <div class="col-lg-10">
+            <div class="col-xl-10">
                 <div class="row gy-2">
                     <div class="col-md-4"><?= renderImg('accreditiation-1.jpg', 'lib', 'w-100 rounded-8') ?></div>
                     <div class="col-md-4"><?= renderImg('accreditiation-2.jpg', 'lib', 'w-100 rounded-8') ?></div>
@@ -664,7 +664,7 @@
 <section class="bg-light-blue py-5">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-10">
+            <div class="col-xl-10">
                 <div class="row justify-content-center justify-content-lg-between align-items-center gy-4">
                     <div class="col-12 col-lg-auto fs-25 text-primary fw-600 text-center">Easy payment methods</div>
                     <div class="col-auto">
