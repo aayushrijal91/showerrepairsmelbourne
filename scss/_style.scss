@@ -2,8 +2,34 @@
 @return url("../images/" + $path + "/" + $file) no-repeat;
 }
 
+
+.slide-logo-wrapper {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+
+    a.slide-logo {
+        transition: 0.2s all;
+        padding: 45px 0;
+        transform: translateX(-1000%);
+        opacity: 0;
+
+        @include media-breakpoint-down(sm) {
+            padding: 24px 0;
+            
+            img {
+                width: 64px;
+                height: 64px;
+            }
+        }
+    }
+}
+
 header {
     background: $light;
+    position: relative;
 
     .header-nav {
         padding: 58px 0 31px;

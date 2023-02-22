@@ -1,3 +1,8 @@
+<div class="slide-logo-wrapper">
+    <a href="./" class="slide-logo">
+        <?= renderImg("slide-logo.png", "logo") ?>
+    </a>
+</div>
 <header>
     <div class="header-nav">
         <div class="container">

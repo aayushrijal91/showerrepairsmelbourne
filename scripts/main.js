@@ -16,6 +16,14 @@ $(window).on('scroll', () => {
     } else {
         $('#return-to-top').fadeOut(300);
     }
+
+    if($(this).scrollTop() >= 218) {
+        $('header').css('z-index', '-1');
+        $('.slide-logo').css('transform','translateX(0)').css('opacity', '1');
+    } else {
+        $('header').css('z-index', '1000000');
+        $('.slide-logo').css('transform','translateX(-1000%)');
+    }
 });
 
 $('#return-to-top').on('click', () => {
