@@ -12,12 +12,12 @@
 
     a.slide-logo {
         transition: 0.2s all;
-        padding: 45px 0;
+        padding-top: 45px;
         transform: translateX(-1000%);
         opacity: 0;
 
         @include media-breakpoint-down(sm) {
-            padding: 24px 0;
+            padding-top: 24px;
             
             img {
                 width: 64px;
@@ -439,7 +439,13 @@ section.form {
     }
 
     form {
-
+        input, select, textarea {
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        
         input,
         select {
             height: 55px;
