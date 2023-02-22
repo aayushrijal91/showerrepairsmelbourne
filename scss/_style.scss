@@ -328,5 +328,13 @@ footer {
 
     .contact {
         padding: 120px 0;
+
+        @include media-breakpoint-down(sm) {
+            padding: 52px 0;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 55px 0 34px;
     }
 }

@@ -441,23 +441,23 @@
 
 <section class="accreditiation">
     <div class="container">
-        <div class="row justify-content-between align-items-center">
+        <div class="row justify-content-between align-items-center gy-5">
             <div class="col-auto text-primary">
                 <div class="fs-35 fw-600">Protect your home from water damage</div>
-                <div class="fs-20 fw-300 pt-2">- Yes! We are the right team for your water proofing and sealing job!</div>
+                <div class="fs-20 fw-300 pt-3 pt-md-2">- Yes! We are the right team for your water proofing and sealing job!</div>
             </div>
-            <div class="col-auto">
+            <div class="col-md-auto">
                 <div class="row">
-                    <div class="col-auto">
-                        <a href="#form" class="btn btn-light rounded-pill border-quarternary shadow-quarternary text-quarternary fs-23 px-5">Free quote</a>
+                    <div class="col-6 col-md-auto">
+                        <a href="#form" class="btn btn-light rounded-pill border-quarternary shadow-quarternary text-quarternary fs-23 px-md-5 w-100">Free quote</a>
                     </div>
-                    <div class="col-auto">
-                        <a href="tel:<?= $phone_number ?>" class="btn btn-quarternary rounded-pill border-primary shadow-primary text-white fs-23 px-4"><?= $phone_number ?></a>
+                    <div class="col-6 col-md-auto">
+                        <a href="tel:<?= $phone_number ?>" class="btn btn-quarternary rounded-pill border-primary shadow-primary text-white fs-23 px-md-4 w-100"><?= $phone_number ?></a>
                     </div>
                 </div>
             </div>
         </div>
-        <hr class="bg-secondary my-6">
+        <hr class="bg-secondary my-5 my-md-6">
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="row gy-2">
@@ -474,8 +474,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-auto fs-25 text-primary fw-600">Easy payment methods</div>
+                <div class="row justify-content-between align-items-center gy-4">
+                    <div class="col-12 col-md-auto fs-25 text-primary fw-600 text-center">Easy payment methods</div>
                     <div class="col-auto">
                         <?= renderImg('payment-methods.png', 'lib') ?>
                     </div>
@@ -492,19 +492,21 @@
         <div class="text-center">
             <a href="./"><?= renderImg('footer-logo.png', 'logo') ?></a>
         </div>
-        <div class="row justify-content-between contact">
+        <div class="row justify-content-between contact gy-7 gy-md-2">
             <div class="col-auto">
-                <div class="row">
+                <div class="row gy-5">
                     <div class="col-auto">
+                        <div class="text-secondary fw-600 pb-3">Speak to our professionals</div>
                         <a href="tel:<?= $phone_number ?>" class="btn btn-quarternary rounded-pill border-white shadow-white text-white fs-23 px-4"><?= $phone_number ?></a>
                     </div>
                     <div class="col-auto">
+                        <div class="text-secondary fw-600 pb-3">Get your free quote today!</div>
                         <a href="#form" class="btn btn-light rounded-pill border-quarternary shadow-quarternary text-quarternary fs-23 px-5">Free quote</a>
                     </div>
                 </div>
             </div>
-            <div class="col-auto">
-                <div class="row justify-content-center">
+            <div class="col-md-auto">
+                <div class="row justify-content-center gx-2 gx-md-4">
                     <div class="col-auto">
                         <a href="<?= $facebook ?>" target="_blank" class="">
                             <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -542,8 +544,10 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center justify-content-lg-between align-items-center">
-            <div class="col-auto">
+
+        <div class="row justify-content-between align-items-center">
+            <div class="col-5 text-light fw-600 d-md-none lh-1"><?= $site ?></div>
+            <div class="col-auto d-none d-md-block">
                 <div class="row gx-2 gx-md-3 text-white justify-content-center fw-300">
                     <div class="col-auto text-center"><?= $site ?></div>
                     <div class="col-auto">|</div>
@@ -552,11 +556,15 @@
                     <div class="col-auto text-center">Copyright <?= date('Y') ?></div>
                 </div>
             </div>
-            <div class="col-auto d-none d-lg-block">
+            <div class="col-5 col-md-auto">
                 <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
                     <?= renderImg("aiims.png", "logo") ?>
                 </a>
             </div>
+        </div>
+
+        <div class="d-md-none text-light fw-300 pt-4 fs-13">
+            All Rights Reserved | Copyright <?= date('Y') ?>
         </div>
     </div>
 </footer>

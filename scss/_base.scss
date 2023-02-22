@@ -17,9 +17,11 @@ body {
     line-height: 0.8;
     border-width: 2px;
     border-style: solid;
+    font-weight: 600;
 
     @include media-breakpoint-down(sm) {
         height: 54px;
+        font-size: 1rem !important;
     }
 
     &:focus {
