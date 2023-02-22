@@ -158,7 +158,7 @@ function manageFooter(pointerThis) {
     }
 }
 
-if($(document).width() <= 540) {
+if($(document).width() <= 900) {
     $('.serviceSliderNav').slick({
         slidesToShow: 4,
         arrows: false,

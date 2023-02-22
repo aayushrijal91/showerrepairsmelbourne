@@ -2,7 +2,7 @@
     <div class="header-nav">
         <div class="container">
             <div class="row justify-content-between align-items-center">
-                <div class="col-7 col-md-auto">
+                <div class="col-7 col-md-6 col-lg-auto">
                     <a href="./">
                         <?= renderImg("logo.png", "logo") ?>
                     </a>
@@ -35,7 +35,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 d-none d-md-flex flex-column align-items-end">
+                        <div class="col-lg-6 d-none d-lg-flex flex-column align-items-end">
                             <div class="d-inline-flex flex-column align-items-center">
                                 <div class="pb-3 fs-17">See our services</div>
                                 <a href="#services">
@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 d-none d-md-flex flex-column align-items-end">
+                        <div class="col-lg-6 d-none d-lg-flex flex-column align-items-end">
                             <div class="d-inline-flex flex-column align-items-center">
                                 <div class="pb-3 fs-17">See our services</div>
                                 <a href="#services">
@@ -130,10 +130,10 @@
         </div>
     </div>
 
-    <div class="d-md-none">
-        <div class="container">
+    <div class="d-lg-none">
+        <div class="container text-md-center">
             <div class="fs-66 text-secondary fw-600 lh-1">We have nothing but 5-star Reviews</div>
-            <div class="row align-items-center g-3 py-5">
+            <div class="row justify-content-md-center align-items-center g-3 py-5">
                 <div class="col-auto"><?= renderImg('google.svg', 'icons') ?></div>
                 <div class="col-auto text-primary">
                     <div class="d-flex align-items-center gap-2 lh-1">
@@ -156,11 +156,11 @@
 
 <section class="awards">
     <div class="container">
-        <div class="row">
-            <div class="col-md-5">
+        <div class="row gy-md-5 gy-lg-0">
+            <div class="col-lg-5">
                 <div class="fw-600 fs-57 lh-1 text-primary">Professional, Affordable &amp; Considerate Technicians</div>
                 <div class="text-dark py-5 lh-2 d-md-none">We offer renovation and expansion services for all waterproofing and sealing projects. Our experts will guide you through the process and help you visualise your dream outcome. Our valuable advice and support is the key to successful waterproofing and sealing projects in Melbourne. So, if you're looking for the best shower sealing company in the city, let us show you our expertise.</div>
-                <div class="row align-items-center g-3 pt-7 d-none d-md-flex">
+                <div class="row align-items-center g-3 pt-7 d-none d-lg-flex">
                     <div class="col-auto"><?= renderImg('google.svg', 'icons') ?></div>
                     <div class="col-auto text-primary">
                         <div class="d-flex align-items-center gap-2 lh-1">
@@ -189,8 +189,8 @@
 
 <section class="why-us">
     <div class="container">
-        <div class="row">
-            <div class="col-md-5">
+        <div class="row gy-md-5 gy-lg-0">
+            <div class="col-lg-5">
                 <div class="fw-600 fs-57 lh-1 text-primary">Why should you choose Shower Repair Melbourne?</div>
             </div>
             <div class="col">
@@ -210,7 +210,7 @@
         </div>
 
         <div class="row pt-7 gx-3 gy-4 why-us-large">
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <div class="why-us-card bg-tertiary active">
                     <div>
                         <div class="fs-16 text-primary">Why should you choose Shower Repairs Melbourne?</div>
@@ -223,7 +223,7 @@
                     <div class="divider bg-primary"></div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <div class="why-us-card bg-tertiary">
                     <div>
                         <div class="fs-16 text-primary">Why should you choose Shower Repairs Melbourne?</div>
@@ -236,7 +236,7 @@
                     <div class="divider bg-primary"></div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <div class="why-us-card bg-secondary">
                     <div>
                         <div class="fs-16 text-white">Why should you choose Shower Repairs Melbourne?</div>
@@ -404,7 +404,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-light-blue py-6 py-md-9">
+    <div class="bg-light-blue py-6 py-lh-9">
         <?php
         $services = [
             [
@@ -466,8 +466,8 @@
                             <div>
                                 <div class="divider"></div>
                                 <div class="row justify-content-between align-items-center px-2 pt-3 text-light-blue">
-                                    <div class="col-auto col-md-4 fw-600 ls-0_195"><?= ($index + 1) . '/' . count($services) ?></div>
-                                    <div class="col-md-4 text-center d-none d-md-block">
+                                    <div class="col-auto col-lg-4 fw-600 ls-0_195"><?= ($index + 1) . '/' . count($services) ?></div>
+                                    <div class="col-md-4 text-center d-none d-lg-block">
                                         <a href="javascript:void(0)" class="showMoreServiceDescription">
                                             <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="26.0579" cy="26.0579" r="25.5579" stroke="#F3F7FB" />
@@ -475,7 +475,7 @@
                                             </svg>
                                         </a>
                                     </div>
-                                    <div class="col-auto col-md-4 fw-300 text-end">Our services</div>
+                                    <div class="col-auto col-lg-4 fw-300 text-end">Our services</div>
                                     <div class="col-auto">
                                         <div class="row">
                                             <div class="col-auto">
@@ -510,11 +510,11 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <div class="row justify-content-between align-items-center">
+                <div class="row justify-content-center justify-content-lg-between align-items-center">
                     <div class="col-9 col-lg-6">
-                        <div class="text-primary fs-35 fw-600 lh-1">Give us a call or enquire if you need our expert advice!</div>
+                        <div class="text-primary fs-35 fw-600 lh-1 text-md-center text-lg-start">Give us a call or enquire if you need our expert advice!</div>
                     </div>
-                    <div class="col-lg-auto">
+                    <div class="col-auto">
                         <div class="row pt-6 pb-5">
                             <div class="col-auto">
                                 <a href="tel:<?= $phone_number ?>" class="btn btn-quarternary rounded-pill border-primary shadow-primary text-white fs-23 px-4"><?= $phone_number ?></a>
@@ -525,7 +525,7 @@
                         </div>
                     </div>
                 </div>
-                <hr class="bg-secondary my-7 d-none d-md-block">
+                <hr class="bg-secondary mt-3 mb-5 my-lg-7 d-none d-md-block">
                 <div class="row justify-content-md-center gx-3 gx-md-4">
                     <div class="col-auto">
                         <a href="<?= $facebook ?>" target="_blank" class="">
@@ -665,8 +665,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <div class="row justify-content-between align-items-center gy-4">
-                    <div class="col-12 col-md-auto fs-25 text-primary fw-600 text-center">Easy payment methods</div>
+                <div class="row justify-content-center justify-content-lg-between align-items-center gy-4">
+                    <div class="col-12 col-lg-auto fs-25 text-primary fw-600 text-center">Easy payment methods</div>
                     <div class="col-auto">
                         <?= renderImg('payment-methods.png', 'lib') ?>
                     </div>
@@ -683,7 +683,7 @@
         <div class="text-center">
             <a href="./"><?= renderImg('footer-logo.png', 'logo') ?></a>
         </div>
-        <div class="row justify-content-between contact gy-7 gy-md-2">
+        <div class="row align-items-center justify-content-between contact gy-7 gy-md-2">
             <div class="col-auto">
                 <div class="row gy-5">
                     <div class="col-auto">
@@ -692,13 +692,13 @@
                     </div>
                     <div class="col-auto">
                         <div class="text-secondary fw-600 pb-3 d-md-none">Get your free quote today!</div>
-                        <a href="#form" class="btn btn-light rounded-pill border-quarternary shadow-quarternary text-quarternary fs-23 px-5">Free quote</a>
+                        <a href="#form" class="btn btn-light rounded-pill border-quarternary shadow-quarternary text-quarternary fs-23 px-lg-5">Free quote</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-auto">
-                <div class="row justify-content-center gx-2 gx-md-4">
-                    <div class="col-auto">
+            <div class="col-md col-lg-auto">
+                <div class="row justify-content-center gx-2 gx-lg-4">
+                    <div class="col-auto col-md col-lg-auto">
                         <a href="<?= $facebook ?>" target="_blank" class="">
                             <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="28" cy="28" r="27" fill="#0050A5" stroke="#3FA9F3" stroke-width="2" />
@@ -706,7 +706,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="col-auto">
+                    <div class="col-auto col-md col-lg-auto">
                         <a href="<?= $instagram ?>" target="_blank" class="">
                             <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="28.54" cy="28" r="27" fill="#0050A5" stroke="#3FA9F3" stroke-width="2" />
@@ -716,7 +716,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="col-auto">
+                    <div class="col-auto col-md col-lg-auto">
                         <a href="<?= $linkedin ?>" target="_blank" class="">
                             <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="28.0801" cy="28" r="27" fill="#0050A5" stroke="#3FA9F3" stroke-width="2" />
@@ -724,7 +724,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="col-auto">
+                    <div class="col-auto col-md col-lg-auto">
                         <a href="<?= $youtube ?>" target="_blank" class="">
                             <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="28.6211" cy="28" r="27" fill="#0050A5" stroke="#3FA9F3" stroke-width="2" />
@@ -737,8 +737,8 @@
         </div>
 
         <div class="row justify-content-between align-items-center">
-            <div class="col-5 text-light fw-600 d-md-none lh-1"><?= $site ?></div>
-            <div class="col-auto d-none d-md-block">
+            <div class="col-5 text-light fw-600 d-lg-none lh-1"><?= $site ?></div>
+            <div class="col-auto d-none d-lg-block">
                 <div class="row gx-2 gx-md-3 text-white justify-content-center fw-300">
                     <div class="col-auto text-center"><?= $site ?></div>
                     <div class="col-auto">|</div>
@@ -754,7 +754,7 @@
             </div>
         </div>
 
-        <div class="d-md-none text-light fw-300 pt-4 fs-13">
+        <div class="d-lg-none text-light fw-300 pt-4 fs-13">
             All Rights Reserved | Copyright <?= date('Y') ?>
         </div>
     </div>
