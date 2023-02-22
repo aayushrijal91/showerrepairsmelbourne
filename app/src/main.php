@@ -496,11 +496,11 @@
             <div class="col-auto">
                 <div class="row gy-5">
                     <div class="col-auto">
-                        <div class="text-secondary fw-600 pb-3">Speak to our professionals</div>
+                        <div class="text-secondary fw-600 pb-3 d-md-none">Speak to our professionals</div>
                         <a href="tel:<?= $phone_number ?>" class="btn btn-quarternary rounded-pill border-white shadow-white text-white fs-23 px-4"><?= $phone_number ?></a>
                     </div>
                     <div class="col-auto">
-                        <div class="text-secondary fw-600 pb-3">Get your free quote today!</div>
+                        <div class="text-secondary fw-600 pb-3 d-md-none">Get your free quote today!</div>
                         <a href="#form" class="btn btn-light rounded-pill border-quarternary shadow-quarternary text-quarternary fs-23 px-5">Free quote</a>
                     </div>
                 </div>
