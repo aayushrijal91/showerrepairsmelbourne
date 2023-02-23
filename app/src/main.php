@@ -245,8 +245,8 @@
                 <div class="why-us-card bg-secondary">
                     <div>
                         <div class="fs-16 text-white">Why should you choose Shower Repairs Melbourne?</div>
-                        <div class="heading pt-5">We consult &amp; give practical advice</div>
-                        <div class="fs-17 text-white fw-600 py-4">We're the best in the industry</div>
+                        <div class="heading pt-5">We DO NOT use contractors!</div>
+                        <div class="fs-17 text-white fw-600 py-4">We are a licensed Sealing Company</div>
                         <div class="fw-300 fs-16 lh-2 pt-2 pb-6 text-white">
                             Shower Repairs Melbourne - <span class="fw-600">Quality Workmanship You Can Count On!</span>
                             At Shower Repairs Melbourne, we understand the importance of quality workmanship in shower sealing and waterproofing. Unlike some contractors who offer quick and cheap services, we are fully licensed and committed to providing you with a sealing and waterproofing solution <span class="fw-600">that lasts a lifetime.</span>
@@ -530,7 +530,7 @@
                         </div>
                     </div>
                 </div>
-                <hr class="bg-secondary mt-3 mb-5 my-lg-7 d-none d-md-block">
+                <!-- <hr class="bg-secondary mt-3 mb-5 my-lg-7 d-none d-md-block"> -->
                 <!-- <div class="row justify-content-md-center gx-3 gx-md-4">
                     <div class="col-auto">
                         <a href="<?= $facebook ?>" target="_blank" class="">
