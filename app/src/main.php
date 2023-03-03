@@ -428,12 +428,12 @@
             [
                 "name" => "Grout Repair",
                 "icon" => "shower-sealing.png",
-                "description" => "Teams all over Sydney to assist you 24/7."
+                "description" => "Teams all over Melbourne to assist you 24/7."
             ],
             [
                 "name" => "Water Proofing",
                 "icon" => "shower-sealing.png",
-                "description" => "Teams all over Sydney to assist you 24/7."
+                "description" => "Teams all over Melbourne to assist you 24/7."
             ],
             [
                 "name" => "Leaking Balcony",
